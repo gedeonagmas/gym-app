@@ -247,7 +247,7 @@ const Lists = ({ type }) => {
             {type !== "schedule" && (
               <p className="text-[14px] w-full">
                 {type === "gallery"
-                  ? "Gallery Images (you can select up to 15 images) *"
+                  ? "Gallery Image *"
                   : type + "Image *"}
               </p>
             )}
@@ -260,8 +260,7 @@ const Lists = ({ type }) => {
                       : setImages(e.target.files[0])
                   }
                   className="w-full opacity-0 h-[51px] absolute z-10 text-[14px] border border-solid border-[#e4e4e4] outline-none"
-                  multiple={type === "gallery" ? true : false}
-                  placeholder="Images"
+                  placeholder="Image"
                   type="file"
                 ></input>
                 <div className="w-full h-[51px] py-1 flex items-center px-[20px] text-[14px] outline-none">
